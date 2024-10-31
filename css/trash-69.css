@@ -207,8 +207,9 @@ body {
 }
 
 .buy-now {
-    background-color: #BE1E2D;
-    color: #fff;
+    background-color: #FFDE17;
+    color: #000000;
+    font-weight: bold;
 }
 
 .add-to-cart {
