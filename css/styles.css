@@ -1,0 +1,290 @@
+@font-face {
+    font-family: Diediedi;
+    src: url(/font/DIEDIEDI.TTF);
+}
+@font-face {
+    font-family: Diplomata;
+    src: url(/font/Diplomata-Regular.ttf)    
+}
+@font-face {
+    font-family: Sanchez;
+    src: url(/font/Sanchez-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #21409A;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFDE17;
+    padding: 10px;
+    color: black;
+}
+
+.header-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    text-align: center;
+}
+
+.header-text p {
+    margin: 0;
+}
+
+.menu {
+    flex: 0 0 auto;
+    margin: 3%;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.burger-menu, .shopping-cart, .user-account {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0 10px;
+}
+
+.burger-menu:hover img, .shopping-cart:hover img, .user-account:hover img {
+    filter: brightness(0.8);
+    transform: scale(1.1);
+}
+
+.burger-menu img {
+    padding: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.shopping-cart img {
+    padding: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.user-account img {
+    padding: 0;
+    width: 50px;
+    height: 50px;
+}
+
+
+.header-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Diplomata';
+}
+
+.title-section {
+    background-color: #21409A;
+    text-align: center;
+    padding: 20px;
+}
+
+.title-button {
+    text-decoration: none;
+    color: #BE1E2D;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.title-button h1 {
+    font-family: 'Diediedi';
+    font-size: 100px;
+    color: #ffffff;
+    -webkit-text-stroke: 10px #BE1E2D;
+    font-weight: 4;
+    paint-order: stroke fill;
+}
+
+.title-button:hover {
+    color: #BE1E2D;
+    transform: scale(1.1);
+}
+
+
+.carousel-section {
+    background-color: #21409A;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 360px;
+}
+
+.carousel-wrapper {
+    background-color: black;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    flex: none;
+    width: 300px;
+    margin: 0 10px;
+    background-color: #FFDE17;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.carousel-item a:hover img{
+    transform: scale(1.05);
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-item span {
+    color: #000000;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.trash-price {
+    font-weight:normal;
+    font-size: small;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: black;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+/* Info Section Styles */
+.info-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #0018A8; /* Info section background color */
+}
+
+.info-section h2 {
+    color: #000000; /* Text color */
+    background-color: #FFDE17; /* Background color */
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Sanchez', serif;
+    font-weight: lighter;
+    margin-bottom: 0; /* Remove bottom margin to ensure it's tight with the card */
+}
+
+.info-column {
+    margin: 10px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    background-color: #000000; /* Card background color */
+    color: white;
+    margin: 0; /* Remove margin to ensure it's tight with the h2 */
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    padding-bottom: 15px; /* Add extra space for border */
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.card-content {
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 24px !important; /* Ensure this size is applied */
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: white;
+    margin: 5px 0;
+}
+
+.card-price {
+    font-size: 14px;
+    text-align: right;
+    margin: 0;
+    margin-top: 10px;
+}
+
+/* Adding bottom border */
+.card::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    height: 2px;
+    background-color: #FFDE17;
+}
+
+
+footer {
+    background-color: #BE1E2D;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+}

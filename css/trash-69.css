@@ -1,0 +1,222 @@
+@font-face {
+    font-family: Diediedi;
+    src: url(/font/DIEDIEDI.TTF);
+}
+
+@font-face {
+    font-family: Diplomata;
+    src: url(/font/Diplomata-Regular.ttf)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #21409A;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFDE17;
+    padding: 10px;
+    color: black;
+}
+
+.header-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    text-align: center;
+}
+
+.header-text p {
+    font-family: 'Diediedi';
+    font-size: 75px;
+    margin: 0;
+}
+
+.header-text a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-button:hover {
+    color: #BE1E2D;
+    transform: scale(1.1);
+}
+
+.menu {
+    flex: 0 0 auto;
+    margin: 3%;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.burger-menu,
+.shopping-cart,
+.user-account {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0 10px;
+}
+
+.burger-menu:hover img,
+.shopping-cart:hover img,
+.user-account:hover img {
+    filter: brightness(0.8);
+    transform: scale(1.1);
+}
+
+.burger-menu img {
+    padding: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.shopping-cart img {
+    padding: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.user-account img {
+    padding: 0;
+    width: 50px;
+    height: 50px;
+}
+
+
+.header-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Diplomata';
+}
+
+.title-section {
+    background-color: #21409A;
+    text-align: center;
+    padding: 20px;
+}
+
+.title-button {
+    text-decoration: none;
+    color: #BE1E2D;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.title-button h1 {
+    font-family: 'Diediedi';
+    font-size: 100px;
+    color: #ffffff;
+    -webkit-text-stroke: 10px #BE1E2D;
+    font-weight: 4;
+    paint-order: stroke fill;
+}
+
+.title-button:hover {
+    color: #BE1E2D;
+    transform: scale(1.1);
+}
+
+
+
+.trash-price {
+    font-weight: normal;
+    font-size: small;
+}
+
+
+
+
+footer {
+    background-color: #BE1E2D;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+}
+
+/* 新增於 /css/styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.product-section {
+    display: flex;
+    margin: 20px auto;
+    max-width: 800px;
+    border: 3px solid #FFDE17;
+    padding: 20px;
+    background-color: #000000;
+    height: 500px;
+    justify-content: center;
+    align-items: center
+}
+
+.product-image img {
+    width: 450px;
+    height: auto;
+    border-radius: 8px;
+    border: 3px #fff;
+    border-style: dashed;
+}
+
+.product-details {
+    margin-left: 20px;
+    flex: 1;
+}
+
+.product-details h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+.product-details p {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.buy-now,
+.add-to-cart {
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.buy-now {
+    background-color: #BE1E2D;
+    color: #fff;
+}
+
+.add-to-cart {
+    background-color: #BE1E2D;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.price p {
+    color: #fff;
+}

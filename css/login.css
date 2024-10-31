@@ -1,0 +1,242 @@
+@font-face {
+    font-family: Diediedi;
+    src: url(/font/DIEDIEDI.TTF);
+}
+
+@font-face {
+    font-family: Diplomata;
+    src: url(/font/Diplomata-Regular.ttf)
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #21409A;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFDE17;
+    padding: 10px;
+    color: black;
+}
+
+.header-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    text-align: center;
+}
+
+.header-text p {
+    font-family: 'Diediedi';
+    font-size: 75px;
+    margin: 0;
+}
+
+.header-text a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-button:hover {
+    color: #BE1E2D;
+    transform: scale(1.1);
+}
+
+.menu {
+    flex: 0 0 auto;
+    margin: 3%;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.burger-menu,
+.shopping-cart,
+.user-account {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0 10px;
+}
+
+.burger-menu:hover img,
+.shopping-cart:hover img,
+.user-account:hover img {
+    filter: brightness(0.8);
+    transform: scale(1.1);
+}
+
+.burger-menu img {
+    padding: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.shopping-cart img {
+    padding: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.user-account img {
+    padding: 0;
+    width: 50px;
+    height: 50px;
+}
+
+
+.header-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Diplomata';
+}
+
+
+footer {
+    background-color: #BE1E2D;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #21409A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    background-color: #FFDE17;
+    color: #000;
+    padding: 15px;
+    text-align: center;
+}
+
+header .menu,
+header .icons {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header .menu button,
+header .icons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header .header-text {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 5%;
+}
+
+.login-section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-section h1 {
+    font-family: 'Diediedi';
+    margin-bottom: 70px;
+    color: #BE1E2D;
+    font-size: 80px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    margin-top: 15px;
+    text-align: left;
+    color: #555;
+    font-size: 14px;
+}
+
+.login-form input {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #BE1E2D;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #555;
+}
+
+.signup-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #777;
+}
+
+.signup-text a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-text a:hover {
+    color: #555;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
