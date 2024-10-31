@@ -1,11 +1,11 @@
 @font-face {
     font-family: Diediedi;
-    src: url(/font/DIEDIEDI.TTF);
+    src: url(./font/DIEDIEDI.TTF);
 }
 
 @font-face {
     font-family: Diplomata;
-    src: url(/font/Diplomata-Regular.ttf)
+    src: url(./font/Diplomata-Regular.ttf)
 }
 
 * {
